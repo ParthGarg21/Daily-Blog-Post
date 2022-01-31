@@ -1,0 +1,45 @@
+<%- include("./partials/header" ); -%>
+
+    <section class="main-con">
+        <div class="body-con container">
+
+
+            <div class="post-con">
+                <h1>
+                    Home
+                </h1>
+                <p class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus animi rem perspiciatis, accusamus
+                    porro excepturitempore, natus explicabo corporis perferendis reiciendis. Laborum quo quibusdam dolor
+                    ratione temporibus deleniti,ipsa impedit rem aliquid minus laboriosam culpa quae architecto
+                    molestias eos esse aperiam, nemo inventore odionecessitatibus incidunt voluptas quas! Totam quae
+                    corrupti praesentium voluptates architecto facere repellat illonisi possimus earum.
+                </p>
+            </div>
+
+            <%for (let post of posts) {%>
+                <%let heading=post.heading;%>
+                    <%let content=post.content;%>
+                        <div class="post-con">
+                            <hr>
+                            <h1>
+                                <%= heading %>
+                            </h1>
+                            <p class="content">
+                                <%= content.substring(0, 85) %>
+                                    <%if (content.length> 85) { %>
+                                        ....
+                                        <a class="post-link" href="/posts/<%= heading %>" + target="_blank">Read More</a>
+                                        <% }%>
+                            </p>
+
+                        </div>
+                        <%}%>
+
+        </div>
+        <a href="/compose" class="compose">+</a>
+
+
+    </section>
+
+    <%- include("./partials/footer" ); -%>

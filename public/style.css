@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+}
+
+header {
+  height: 25vh;
+}
+
+.navbar {
+  padding: 2.5rem 0;
+}
+
+.navbar-brand {
+  font-family: "PT Serif", serif;
+  font-weight: 900;
+  font-size: 2.25rem;
+  letter-spacing: 3px;
+  word-spacing: 3.5px;
+}
+
+.nav-item {
+  margin: 0 1.5rem;
+}
+
+.last-item {
+  margin-right: 0;
+}
+
+.nav-link {
+  letter-spacing: 6px;
+  font-size: 1.125rem;
+}
+
+.container {
+  width: 82.5%;
+}
+
+.main-con {
+  box-sizing: border-box;
+  min-height: 75vh;
+  padding-bottom: 10rem;
+  position: relative;
+}
+
+h1 {
+  font-family: "PT Serif", serif;
+  margin-bottom: 2rem;
+}
+
+.content {
+  font-weight: 500;
+  color: #000;
+  line-height: 2;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #000;
+  height: 10vh;
+}
+
+.copy {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  box-sizing: border-box;
+}
+
+.inp-con {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+}
+
+.btn {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+.con-1 {
+  margin-top: 0;
+}
+
+label {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+input,
+textarea {
+  border-radius: 0.3rem;
+  border: 1px solid rgb(131, 131, 131);
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+textarea {
+  box-shadow: inset 3px 3px 5px rgb(219, 219, 219);
+}
+
+#post-title {
+  box-shadow: inset 3px 3px 5px rgb(219, 219, 219);
+}
+
+.post-con {
+  margin-bottom: 2rem;
+}
+
+hr {
+  margin: 1.5rem 0;
+}
+
+.compose {
+  text-decoration: none;
+  color: #000;
+  border-radius: 100%;
+  border: 1.5px solid black;
+  font-size: 3rem;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all;
+  transition-duration: 0.25s;
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+}
+
+.compose:hover {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 5px 5px 10px rgb(216, 216, 216);
+}
+
+.post-link {
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+.post-link:hover{
+  text-decoration: underline;
+}

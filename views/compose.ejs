@@ -1,0 +1,28 @@
+<%- include("./partials/header" ); -%>
+
+    <section class="main-con">
+        <div class="container">
+            <h1>
+                <%= pageTitle %>
+            </h1>
+
+            <form action="/compose" method="post">
+
+                <div class="con-1 inp-con">
+                    <label for="post-title">Title</label>
+                    <input type="text" name="newPostHeading" id="post-title">
+                </div>
+
+                <div class="con-2 inp-con">
+                    <label for="post-con">Post</label>
+                    <textarea name="newPostBody" id="" cols="30" rows="5"></textarea>
+                </div>
+                
+                <input class="btn btn-outline-dark" type="submit" value="Publish" id = "btn-margin">
+            </form>
+
+        </div>
+
+    </section>
+
+    <%- include("./partials/footer" ); -%>
